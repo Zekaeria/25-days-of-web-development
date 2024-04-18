@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+
+html, body {
+  width: 100vw; //size of webpage
+  height: 100vh;
+  cursor: none; //sets cursor to none
+}
+
+// Customizes whole body
+body {
+  color: #FFF;
+  background: #080808; //sets black background color
+  font-family: Crimson Text;
+}
+
+// Contains name-header "Zekaeria"
+.text-container {
+  font-size: 1.5rem;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+//styles 'Zekaeria' text
+.name-header {
+
+}
+
+.header {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 100px; //margin between 'Zekaeria' and .artist container
+}
+
+// Sets whole button container
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+// Sets style for buttons
+button {
+  font-family: inherit;
+  font-size: 1.3em; // adjusts font size  & button
+  border-radius: 2rem;
+  border-width: 1.5px;
+  margin: 10px; // margin between 3 buttons
+  padding: .7rem; // between INSIDE content text and button borders
+  width: 110px; // button width 
+  height: 45px;
+}
+
+// Styles 'Code button' 
+.code-button {
+  color: #d1fff3;
+  background-color: #080808;
+  border-color: #d1fff3;
+}
+
+// Customizes 'Code' hyperlink 
+.code-button a {
+  text-decoration: none;
+  color: #d1fff3;
+}
+
+.draw-button {
+  color: #ffddab;
+  background-color: #080808;
+  border-color: #ffddab;
+}
+
+.comic-button {
+  color: #facafc;
+  background-color: #080808;
+  border-color: #facafc;
+}
+
+

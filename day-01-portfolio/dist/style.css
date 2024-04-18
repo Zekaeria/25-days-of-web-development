@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+html, body {
+  width: 100vw;
+  height: 100vh;
+  cursor: none;
+}
+
+body {
+  color: #FFF;
+  background: #080808;
+  font-family: Crimson Text;
+}
+
+.text-container {
+  font-size: 1.5rem;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.header {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.3em;
+  border-radius: 2rem;
+  border-width: 1.5px;
+  margin: 10px;
+  padding: 0.7rem;
+  width: 110px;
+  height: 45px;
+}
+
+.code-button {
+  color: #d1fff3;
+  background-color: #080808;
+  border-color: #d1fff3;
+}
+
+.code-button a {
+  text-decoration: none;
+  color: #d1fff3;
+}
+
+.draw-button {
+  color: #ffddab;
+  background-color: #080808;
+  border-color: #ffddab;
+}
+
+.comic-button {
+  color: #facafc;
+  background-color: #080808;
+  border-color: #facafc;
+}
