@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+html, body {
+  width: 100vw;
+  height: 100vh; /* extends html web page 
+  height*/
+  padding: 0; /* positions html  */
+  margin: 0;
+}
+
+/* Styles 'ABBA' h1 */
+h1 {
+  text-align: center;
+  color: #28fc14;
+  font-family: "Roboto Condensed", serif;
+  border: 0; 
+  padding: 0;
+  margin: 0;
+  line-height: 75%; /* aligns header to touch border */
+}
+
+/* Styles ABBA group photo */
+.abba-image {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  transform: translate(15%, 12%);
+}
+
+/* Styles checkerboard pattern */
+.checkerboard {
+  position: fixed;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  background: conic-gradient(
+    transparent 90deg, 
+    #000 90deg 180deg,
+    transparent 180deg 270deg,
+    #000 270deg
+  );
+  background-size: 760px 880px;
+  background-repeat: repeat;
+}
+
+/* Styles disco ball image */
+.discoball-image {
+  position: absolute;
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  margin-top: -100px;
+  width: 70%;
+  animation: MoveUpDown 1s linear infinite;
+}
+
+/* Animates discoball image */
+@keyframes MoveUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/*
+.text-1 {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  font-family: "Roboto Condensed", serif;
+  border-bottom: 60px solid #28fc14;
+	border-left: 50px solid transparent;
+	border-right: 90px solid transparent;
+	height: 0px;
+	width: 500px;
+  transform: translate(50%, 900%) rotate(-7deg);
+}*/
+
