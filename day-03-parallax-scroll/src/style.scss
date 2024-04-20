@@ -1,0 +1,109 @@
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center; 
+  background: rgb(172,230,228);
+  background: rgb(240,169,199);
+  background: linear-gradient(32deg, rgba(240,169,199,1) 15%, rgba(254,197,182,1) 53%, rgba(248,229,154,1) 91%);
+  font-family: "Fraunces", serif;
+}
+
+body {
+  .text-container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    height: 170vh;
+    width: 100vw;
+    color: #232833;
+    
+    &:before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      height: 170vh;
+      width: 100vw;
+      position: absolute;
+    }
+        
+    h1 {
+      position: relative;
+      z-index: 1;
+      
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 4rem;
+      
+      text-shadow: 0 2px 2px rgba(0,0,0,.35);
+      max-width: 25rem;
+      margin: 20vh auto 0; /* changes margin from top*/
+      margin-bottom: 30px;
+    }
+}
+
+.description{
+  line-height: 2.0rem;
+  font-size: 26px;
+  padding-left: 190px; /* pads desc */
+  padding-right: 190px;
+}  
+
+/* Styles button-container */
+.button-container {
+    margin-top: 60px;
+}
+  
+/* Styles initial state of button */  
+.login-button {
+  font-size: 25px;
+  background: transparent;
+  color: #232833;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Styles button when mouse hovers over it */  
+.login-button:hover {
+  border-color: #fff;
+  color: #fff;
+  background: #232833;
+}
+  
+/* Styles content below header */
+.content {
+    position: absolute;
+    z-index: 1000;
+    top: 80vh;
+    
+    background: rgb(101,156,175);
+    background: radial-gradient(circle, rgba(101,156,175,1) 25%, rgba(69,88,129,1) 86%);
+    height: 100vh;
+    width: 100vw;
+  
+    box-shadow: 0 -2px 1px rgba(0,0,0,.15);
+    border-top: 1px solid rgba(255,255,255,.2);
+  }
+}
+
+.grid {
+    margin: 11px;
+}
+
+.grid-sizer, .grid-item, { 
+  width: 18%; 
+}
+
+/* Resizes item and padding*/
+.grid-item, {
+  border-radius: 5px;
+  padding-left:10%;
+}

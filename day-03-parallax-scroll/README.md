@@ -4,6 +4,5 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/zekaeria/pen/RwOq
 
 Parallax Scrolling Webpage
 
-Thank you to Michael Fangman: https://codepen.io/michaelfangman/pen/kWqbeb
 
-Source images are found under Project Gutenberg.
+Image Sources:  Project Gutenberg.
