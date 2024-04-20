@@ -3,7 +3,7 @@
 A Pen created on CodePen.io. Original URL: [https://codepen.io/zekaeria/pen/RwOeOPg](https://codepen.io/zekaeria/pen/RwOeOPg).
 
 Recreation of [Valeria Pix's ABBA website](https://abbaband.tilda.ws/) \
-What I've Learned: jQuery plugin FitMe' plugins (full-width text), image positioning, animation
+What I've Learned: jQuery plugin 'FitMe' plugins (full-width text), image positioning, animation
 
 **Educational Resources:** \
 [Text in containers](https://css-tricks.com/fitting-text-to-a-container/),
