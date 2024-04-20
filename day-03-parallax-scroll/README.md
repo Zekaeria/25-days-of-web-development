@@ -4,5 +4,8 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/zekaeria/pen/RwOq
 
 Parallax Scrolling Webpage
 
+**What I've Learned:** jQuery 'Masonry' plugin for grid layout, parallax, hover button
 
-Image Sources:  Project Gutenberg.
+**Educational Resources:** [Masonry.js library](https://masonry.desandro.com/layout)
+
+**Image Sources:** Project Gutenberg
