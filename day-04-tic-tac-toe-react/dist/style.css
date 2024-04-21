@@ -1,0 +1,55 @@
+body {
+  /* changes background color */
+  background: #2A1F44;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Changes 'Tic Tac Toe' heading */
+.title {
+  margin-top: 30px;
+  color: white;
+  font-size: 50px;
+  display: flex; /* sets type of display behavior --> flex == block-level - starts on new line, full-width */ 
+  justify-content: center; /* aligns flexible containers horizontally */
+}
+
+.board {
+  width: 600px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  /* browser centers box item horizontally in container */
+  margin: auto;
+}
+
+.box {
+  /* set dimensions */
+  width: 100px;
+  height: 100px;
+  /* set box color */
+  background: #BDA6F2;
+  border: 2px solid #2A1F44;
+  border-radius: 5px;
+  /* sets type of pointer when cursor hovers over it */
+  cursor: pointer;
+  display: flex;
+}
+
+
+.restart {
+   /* set dimensions */
+  width: 150px;
+  height: 60px;
+  color: blue; /* sets text color */
+  border: 2px solid yellow;
+  border-radius: 60px;
+  /* sets type of pointer when cursor hovers over it */
+  cursor: pointer;
+  font-size: 25px;
+  /* sets margins away from other class items */
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
