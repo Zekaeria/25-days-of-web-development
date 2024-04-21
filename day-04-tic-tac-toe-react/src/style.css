@@ -16,6 +16,11 @@ body {
   justify-content: center; /* aligns flexible containers horizontally */
 }
 
+.title img {
+  padding: 0px 10px 0px 10px;
+  height: 70px;
+}
+
 .board {
   width: 600px;
   height: 320px;
@@ -36,6 +41,9 @@ body {
   /* sets type of pointer when cursor hovers over it */
   cursor: pointer;
   display: flex;
+}
+
+.box img {
 }
 
 
