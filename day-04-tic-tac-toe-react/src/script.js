@@ -1,7 +1,7 @@
 /*
 resources: 
 kitty: https://unsplash.com/photos/white-kitten-Tn8DLxwuDMA
-doggy:
+doggy: https://unsplash.com/photos/brown-and-white-corgi-puppy-g-Dui8tCdrI
 Thank you to GreatStack for the help: https://www.youtube.com/watch?v=lYtPscvwgP4
 Thank you to catdad for the confetti: https://www.npmjs.com/package/canvas-confetti
 */
@@ -85,14 +85,14 @@ const App = () => {
   
   /* executes when winner found */
   const win = (winner) => {
-    //confetti();
+    confetti();
     setLock(true); /* array cannot be modified */
     /* Change title ref when winner is found */
     if (winner == "c") {
-      titleRef.current.innerHTML = 'Winner: <img src="https://github.com/Zekaeria/25-days-of-web-development/blob/main/day-04-tic-tac-toe-react/hang_niu_kitty.png?raw=true" />';;
+      titleRef.current.innerHTML = 'winner: <img src="https://github.com/Zekaeria/25-days-of-web-development/blob/main/day-04-tic-tac-toe-react/hang_niu_kitty.png?raw=true" />';;
     }
     else {
-      titleRef.current.innerHTML = 'Winner: <img src="https://github.com/Zekaeria/25-days-of-web-development/blob/main/day-04-tic-tac-toe-react/fatty_corgi.png?raw=true" />';
+      titleRef.current.innerHTML = 'winner: <img src="https://github.com/Zekaeria/25-days-of-web-development/blob/main/day-04-tic-tac-toe-react/fatty_corgi.png?raw=true" />';
     }
   }
   
@@ -103,13 +103,13 @@ const App = () => {
       e.current.innerHTML= "";
     })
     array = ["", "", "","", "", "","", "", ""];
-    titleRef.current.innerHTML = 'Tic Tac Toe';
+    titleRef.current.innerHTML = 'tic-tac-toe';
   }
   
   
   return (
     <div class="container">
-      <h1 class="title" ref={titleRef}> Tic Tac Toe </h1>
+      <h1 class="title" ref={titleRef}> tic-tac-toe </h1>
       
       <div class="board"> 
         <div class="row-1">
@@ -129,7 +129,7 @@ const App = () => {
         </div>
       </div>
        
-      <button class="restart"onClick={()=>{restart()}}> Restart </button>
+      <button class="restart"onClick={()=>{restart()}}> restart </button>
    
     </div>
   )

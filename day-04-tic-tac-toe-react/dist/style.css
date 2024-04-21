@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=League+Script&family=Petit+Formal+Script&family=Sansita+Swashed:wght@300..900&display=swap');
+
 body {
   /* changes background color */
-  background: #2A1F44;
+  height: 100vw;
+  background: rgb(134,117,169);
+  background: linear-gradient(48deg, rgba(134,117,169,1) 17%, rgba(177,173,230,1) 38%, rgba(239,187,207,1) 59%, rgba(255,213,205,1) 78%);
+/*background: rgb(170,150,218);
+background: linear-gradient(54deg, rgba(170,150,218,1) 13%, rgba(168,216,234,1) 41%, rgba(252,186,211,1) 70%, rgba(255,255,210,1) 96%);*/
+
 }
 
 .container {
@@ -10,10 +17,13 @@ body {
 /* Changes 'Tic Tac Toe' heading */
 .title {
   margin-top: 30px;
-  color: white;
+  color: ;
+  font-family: "Petit Formal Script", cursive;
   font-size: 50px;
+  text-shadow: 2px 2px 2px white;
   display: flex; /* sets type of display behavior --> flex == block-level - starts on new line, full-width */ 
   justify-content: center; /* aligns flexible containers horizontally */
+
 }
 
 .title img {
@@ -26,6 +36,7 @@ body {
   height: 320px;
   display: flex;
   justify-content: center;
+  
   /* browser centers box item horizontally in container */
   margin: auto;
 }
@@ -35,9 +46,11 @@ body {
   width: 100px;
   height: 100px;
   /* set box color */
-  background: #BDA6F2;
-  border: 2px solid #2A1F44;
-  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  color: #fff;
+  border: 1px solid #2A1F44;
+  border-radius: 7px;
   /* sets type of pointer when cursor hovers over it */
   cursor: pointer;
   display: flex;
@@ -51,12 +64,16 @@ body {
    /* set dimensions */
   width: 150px;
   height: 60px;
-  color: blue; /* sets text color */
-  border: 2px solid yellow;
+  color: white; /* sets text color */
+  border: 2px solid white;
   border-radius: 60px;
   /* sets type of pointer when cursor hovers over it */
   cursor: pointer;
+  background-color: rgba(0,0,0,.5);
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold;
   font-size: 25px;
+  text-shadow: 2px 2px 2px black;
   /* sets margins away from other class items */
   margin-top: 30px;
   margin-bottom: 50px;
