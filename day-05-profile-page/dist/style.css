@@ -1,0 +1,130 @@
+/* TODO: clean up code..., make efficient */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: #d3c3d3;
+  /*color for img: #a87795*/
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%; /* width of nav-bar compared to vw */
+  height: 80px;
+  overflow: hidden; /* hides text overlap when browser viewport shrinks */
+}
+
+/* styles both child elements 'title' & 'link' of parent 'nav-bar' */
+.nav-child {
+  flex: 1;
+  border-radius: 30px;
+  margin: 20px;
+  height: 50px; /* height of container */
+
+  /* align text to center */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px; /* same px as 'height' */
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+
+  /* white background for ea child*/
+  background: #f0f0e4;
+}
+
+.nav-child:first-child {
+  margin-right: 200px; /* important! adds space in between children */
+}
+
+.fa-brands {
+  padding: 10px;
+}
+
+/* parent */
+.container {
+  position: relative;
+  width: 100%; /* width from viewport - "width takes up 50% of viewport width"*/
+  height: 90%;
+}
+
+.text-container {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    width: 100%; /* width from viewport - "width takes up 50% of viewport width"*/
+    height: 100%;
+    z-index: 0;
+    /* positions away from other containers */
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    /* change font*/
+    font-size: 75px;
+    font-family: "Unna", serif;
+  
+    /*important for animation*/
+    overflow: hidden; /* doesn't show text beyond 'text-container' borders :)*/
+}
+
+.text-container-2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%; /* width from viewport - "width takes up 50% of viewport width"*/
+    height: 22%;
+    /* positions away from other containers */
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    /* change font*/
+    font-size: 75px;
+    font-family: "Unna", serif;
+    /*important for animation*/
+    overflow: hidden; /* doesn't show text beyond 'text-container' borders :)*/
+}
+
+.zekaeria {
+  margin-right: 550px; /* text/position moves left w/in container*/
+  /* animation */
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.pad {
+  margin-left: 120px; /* text moves right */
+  /* animation */
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1.0s;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  z-index: -1; 
+  /* for positioning and resizing */
+  position: absolute;
+  margin-top: 120px;
+  margin-right: 540px;
+  margin-left: 30%;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1.0s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0; /*fade in */
+    transform: translate(0, 100%); /*move up*/
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
