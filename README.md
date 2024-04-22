@@ -7,5 +7,5 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 2: ABBA.** jQuery, HTML, CSS(SCSS), JavaScript \
 **Day 3: Parallax Scroll.** jQuery, HTML, CSS, JavaScript \
 **Day 4: Tic Tac Toe.** React, jQuery, HTML, CSS, JavaScript \
-**Day 5: TBD** 
+**Day 5: Profile Page.**
 
