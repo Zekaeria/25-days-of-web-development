@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding:0;
+  background: linear-gradient(160deg, hsla(var(--color-1) / .5), hsla(var(--color-2) / .5)), white;
+  background-attachment: fixed; /* set to fixed position w/in viewport */
+  
+  /* HSL Colors, thank you to @summercodes for HSL explanation */
+  --white: 49 61% 83%; /* double dashes = custom properties */
+  --white-hsl: hsl(var(--white));
+  --black: 26 72% 15%;
+  --black-hsl: hsl(var(--black));
+  --color-1: 255 80% 80%; /* replace these numbers with the HSL color of your choice; HSL in google color */
+  --color-1-hsl: hsl(var(--color-1));
+  --color-2: 296 62% 69%; /* replace these numbers with the HSL color of your choice; HSL - HEX */
+  --color-2-hsl: hsl(var(--color-2));  
+  
+  /* Gradients */
+  --grad-y-o: linear-gradient(160deg, var(--color-1-hsl), var(--color-2-hsl));
+}
+
+/* CSS pseudo elements, good for debugging */
+/* border-box: browser accounts for any border and padding in the values specified for an element's width and height */
+* , *::before, *::after { box-sizing: border-box; }
+
+.container {
+  width: min(100%, 600px); /* min width - wide as its container */
+  margin: 1rem auto;
+  padding: 2rem;
+  
+  background: var(--grad-y-o); /* uses custom property specified */
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem hsla(var(--black) / .2);
+  color: white;
+  
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  grid-template-rows: 2rem auto auto;
+}
+
+.top (
+  /* order of values : grid-row-start, grid-column-start, grid-row-end and grid-column-end */
+  grid-area: 1 / 1 / 2 / 3; /* sets grid item's size and location within a grid  */
+  width: calc(100% + 4rem);
+  margin: 0 -2rem;
+  border-bottom: 1px solid white;
+)
+
+.left {
+  grid-area: 1 / 1 / 3 / 2;
+  height: calc(100% + 2rem);
+  margin: -2rem 0 0 0;
+  border-right: 1px solid white;
+}
+
+.icon {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 2rem; 
+}
+
+.icon img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 2rem;
+  border: .25rem solid white;
+  box-shadow: 0 0 .5rem hsla(var(--black) / .2);
+}
+
+.three-by-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  
+  /* grid */
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 3rem 1rem 3rem 3rem;
+}
+
+.three-by-three img {
+  aspect-ratio: 1 / 1;
+  
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: .25rem solid white;
+  -webkit-border-radius: .5rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem hsla(var(--black) / .1);
+  
+}
+
+.bottom {
+  grid-area: 3 / 1 / 4 / 3;
+  margin: 0 -2rem -2rem -2rem;
+  padding: 2rem;
+  letter-spacing: .1rem;
+  
+  /* white overlay */
+  background: hsla(var(--white) / .2);
+  border-radius: 0 0 1rem 1rem;
+  border-top: 1px solid white;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.subtitle {
+  text-transform: lowercase;
+  text-align: right;
+}
