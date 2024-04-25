@@ -35,6 +35,7 @@ body {
   display: grid;
   grid-template-columns: 2rem 1fr;
   grid-template-rows: 2rem auto auto;
+  
 }
 
 .top (
