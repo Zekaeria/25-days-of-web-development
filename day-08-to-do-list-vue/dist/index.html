@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Day 8: To Do List </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div class="title"> {{ title }} </div>
+    <input type="text" class="input" placeholder="Add task..." v-on:keyup.enter="addToDo">
+    <u1>
+      <li v-for="todo in todos" class="flex">
+       <span class="text">{{ todo.text }}</span>
+        <button class="button" v-on:click="removeToDo(todo.id)"> X </button>
+      </li>
+    </u1>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
