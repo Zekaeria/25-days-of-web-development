@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-  /* prevents repeating background*/
-  height: 100vh;
-  padding: 25px; /* set padding of body away from #app */
+  height: 100vh;   /* prevents repeating background*/
+  padding: 25px;   /* set padding of body away from #app */
   background: var(--grad-y-o);
+  
+  /* Font for entire body */
+  font-family: "Rubik", sans-serif;
   
   /* Custom properties as HSL Colors */
   --black: 26 72% 15%;
   --white: 49 0% 100%;
-  --color-1: 255 80% 80%; /* color 1 for hsl */
+  --color-1: 206 96% 77%; /* color 1 for hsl */
   --color-1-hsl: hsl(var(--color-1));
-  --color-2: 296 62% 69%; /* color 2 for hsl */
+  --color-2: 294 94% 67%; /* color 2 for hsl */
   --color-2-hsl: hsl(var(--color-2));
   
   /* Gradient */
@@ -23,25 +27,32 @@ body {
   padding: 25px;
 }
 
+.title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
 .input-bar {  
   border-radius: 7px;
   /* white overlay */
   background: linear-gradient(160deg, hsla(var(--color-1) / .6), hsla(var(--color-2) / .6)), white; /* uses custom property specified */
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  width: calc(100vw - 150px); /* extends container when resizing browser */
-
+  padding: 7px;
+  width: calc(100vw - 150px); /* extends container when resizing browser */ 
+  font-size: 20px;
 }
 
 ::placeholder {
-  color: black;
+  color: black; /* changes placeholder text color */
 }
 
 /* Styles list item */
 li {
    margin: 10px;
-   white-space: normal; /* fixes text overflow, creates new line */
-   line-height: 1.6; /* line spacing for multi-line txt */
+   white-space: normal;   /* fixes text overflow, creates new line */
+   line-height: 1.6;      /* line spacing for multi-line txt */
+   font-size: 20px;
 }
 
 .button {
@@ -50,4 +61,9 @@ li {
   border: 1px solid black;
   border-radius: 4px;  
   margin-left: 15px; /* position away from list item text */
+  
+  /* black overlay when button clicked */
+  &:focus {
+  background: linear-gradient(160deg, hsla(var(--color-1) / .6), hsla(var(--color-2) / .6)), black;
+  }
 }
