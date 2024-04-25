@@ -2,16 +2,16 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Day 8: To Do List </title>
+  <title>CodePen - Day 8: To Do List  (Vue)</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="app">
   <div class="title"> {{ title }} </div>
-    <input type="text" class="input" placeholder="Add task..." v-on:keyup.enter="addToDo">
+    <input type="text" class="input-bar" placeholder="Add task..." v-on:keyup.enter="addToDo">
     <u1>
       <li v-for="todo in todos" class="flex">
        <span class="text">{{ todo.text }}</span>

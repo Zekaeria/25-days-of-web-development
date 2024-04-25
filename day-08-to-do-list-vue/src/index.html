@@ -1,6 +1,6 @@
 <div id="app">
   <div class="title"> {{ title }} </div>
-    <input type="text" class="input" placeholder="Add task..." v-on:keyup.enter="addToDo">
+    <input type="text" class="input-bar" placeholder="Add task..." v-on:keyup.enter="addToDo">
     <u1>
       <li v-for="todo in todos" class="flex">
        <span class="text">{{ todo.text }}</span>
