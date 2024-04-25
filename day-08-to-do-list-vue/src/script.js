@@ -4,7 +4,8 @@ new Vue({
     title: 'To Do List ',
     todos: [
       { text: 'Practice Vue', id:Date.now() },
-      { text: 'Get some sleep', id:Date.now()+1 }
+      { text: 'Get some sleep', id:Date.now()+1 },
+      { text: 'Repair the Batmobile', id:Date.now()+1 }
     ]
   },
   /* METHODS */
