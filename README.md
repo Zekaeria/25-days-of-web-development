@@ -10,6 +10,6 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 5: Profile Page.** \
 **Day 6: Typewriter.** \
 **Day 7: Mood Board.** HSL, Grid \
-**Day 8: TBD.**  \
+**Day 8: To Do List.** Vue. HSL.  \
 **Day 9: TBD.**  \
 **Day 10: TBD.**
