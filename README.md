@@ -11,5 +11,5 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 6: Typewriter.** \
 **Day 7: Mood Board.** HSL, Grid \
 **Day 8: To Do List.** Vue. HSL.  \
-**Day 9: TBD.**  \
+**Day 9: Heart.** Three.js, WebGL \
 **Day 10: TBD.**
