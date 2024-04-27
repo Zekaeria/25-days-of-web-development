@@ -1,1 +1,1 @@
-//resources: mdn web docs
+//resources: mdn web docs, css clip-path maker

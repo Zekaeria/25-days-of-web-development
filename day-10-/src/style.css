@@ -39,19 +39,32 @@ body {
 }
 
 .circleLeft {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 110px;
+  transform: rotate(267deg); /* parent was rotated, rotate child back*/
   
+  width: 170px;
+  height: 170px;
+  
+  background-color: #d45361; 
+  border-radius: 50%;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);  
 }
 
 
-/*
-.circleButton {
+.directButton {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 40px;
+  
+  clip-path: polygon(0% 0%, 75% 5%, 100% 50%, 75% 95%, 0% 100%);
   
   background-color: black;
-  border-radius: 50%; 
-}*/
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
 
 .controllerRight {
   /* POSITION */
@@ -71,6 +84,7 @@ body {
   box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
 
+
 .circleRight {
   position: relative;
   margin-left: 40px;
@@ -85,13 +99,46 @@ body {
   box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
 
+.circleButton {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  
+  background-color: black;
+  border-radius: 50%; 
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
+.topR {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 62px;
+}
+
+.bottomR {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 62px;
+}
+
+.leftR {
+  position: absolute;
+  margin-top: 62px;
+  margin-left: 10px;
+}
+
+.rightR {
+  position: absolute;
+  margin-top: 62px;
+  margin-left: 110px;  
+}
 
 .center {
   position: absolute;
   width: 400px;
   height: 250px;
   
-  border: 1px dotted black;
+  /*border: 1px dotted black;*/
 }
 
 .touchpad {
