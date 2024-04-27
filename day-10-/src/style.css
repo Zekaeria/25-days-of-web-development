@@ -35,8 +35,23 @@ body {
 
   /* OTHER PROPERTIES */
   background-color: #c23c40;
-  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
+
+.circleLeft {
+  
+}
+
+
+/*
+.circleButton {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  
+  background-color: black;
+  border-radius: 50%; 
+}*/
 
 .controllerRight {
   /* POSITION */
@@ -49,12 +64,27 @@ body {
   height: 400px;
   clip-path: ellipse(230px 100px); /* ellipse */
   border-radius: 100%;
-  transform: rotate(-95deg);
+  transform: rotate(-275deg);
   
   /* OTHER PROPERTIES */
   background-color: #c23c40;
-  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
+
+.circleRight {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 120px;
+  transform: rotate(275deg); /* parent was rotated, rotate child back*/
+  
+  width: 170px;
+  height: 170px;
+  
+  background-color: #d45361; 
+  border-radius: 50%;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+}
+
 
 .center {
   position: absolute;
@@ -65,38 +95,82 @@ body {
 }
 
 .touchpad {
-  position: relative; /* relative to parent, moves w/ parent 'center' */
-  width: 240px;
-  height: 140px;
+  position: relative; /* relative to parent, moves w/ parent 'center' */  
   left: 50%; /* centers horizontally */
   transform: translateX(-50%); /* centers horizontally */
   
+  width: 240px;
+  height: 140px;
+
   background-color: black;
-  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);  
   border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
 
 .sLeft {
+  position: relative;  
+  margin-top: -130px;
+  margin-left: 50px;
   
+  width: 20px;
+  height: 37px;
+  
+  background-color: black;
+  border-radius: 10px;
 }
 
 .oRight {
+  position: relative;  
+  margin-top: -35px;
+  margin-left: 330px;
   
+  width: 20px;
+  height: 37px;
+  
+  background-color: black;
+  border-radius: 10px;
 }
 
 .home {
+  position: relative;
+  margin-top: 145px;
+  left: 50%; /* centers horizontally */
+  transform: translateX(-50%); /* centers horizontally */
   
+  width: 27px;
+  height: 27px;
+  
+  background-color: black;
+  border-radius: 50%;
 }
 
 .stickLeft {
+  position: relative;
+  margin-top: -65px;
+  margin-left: 40px;
   
+  width: 70px;
+  height: 70px;
+  
+  background-color: black;
+  border-radius: 50%;
+  border: solid 20px #d45361;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);  
 }
   
 .stickRight {
+  position: relative;
+  margin-top: -110px;
+  margin-left: 240px;
   
+  width: 70px;
+  height: 70px;
+  
+  background-color: black;
+  border-radius: 50%;
+  border: solid 20px #d45361;  
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);  
 }
-
-
 
 
 
