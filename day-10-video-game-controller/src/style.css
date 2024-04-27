@@ -2,13 +2,13 @@ body {
   margin:auto;
   padding:0;
   box-sizing: border-box;
-  background-color: #defadc;
+  background-color: #cffad6;
 }
 
 .controller {  
   /* POSITION */
   position: relative; 
-  margin-left: 200px; /* space from left  */
+  margin-left: 35%; /* space from left, prev: 200px  */
   margin-top: 100px; /* space from top */
 
   /* SIZING/SHAPE */
@@ -42,7 +42,7 @@ body {
   position: relative;
   margin-left: 40px;
   margin-top: 110px;
-  transform: rotate(267deg); /* parent was rotated, rotate child back*/
+  transform: rotate(267deg); /* rotated parent, rotate back*/
   
   width: 170px;
   height: 170px;
@@ -58,13 +58,37 @@ body {
   width: 42px;
   height: 40px;
   
-  clip-path: polygon(0% 0%, 75% 5%, 100% 50%, 75% 95%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 5%, 100% 50%, 75% 95%, 0% 100%); /* point shape */
   
   background-color: black;
-  border-radius: 6px;
+  border-radius: 12px;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 }
 
+.topL {
+  position: absolute;
+  margin-left: 62px;
+  margin-top: 30px;
+  transform: rotate(90deg);
+}
+
+.bottomL {
+  position: absolute;
+  margin-left: 62px;
+  margin-top: 97px;  
+  transform: rotate(270deg);
+}
+.leftL {
+  position: absolute;
+  margin-left: 31px;
+  margin-top: 63px;  
+}
+.rightL {
+  position: absolute;
+  margin-left: 93px;
+  margin-top: 63px;  
+  transform: rotate(180deg);
+}
 
 .controllerRight {
   /* POSITION */
@@ -83,7 +107,6 @@ body {
   background-color: #c23c40;
   box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 }
-
 
 .circleRight {
   position: relative;
@@ -137,7 +160,6 @@ body {
   position: absolute;
   width: 400px;
   height: 250px;
-  
   /*border: 1px dotted black;*/
 }
 
@@ -158,10 +180,8 @@ body {
   position: relative;  
   margin-top: -130px;
   margin-left: 50px;
-  
   width: 20px;
   height: 37px;
-  
   background-color: black;
   border-radius: 10px;
 }
@@ -170,10 +190,8 @@ body {
   position: relative;  
   margin-top: -35px;
   margin-left: 330px;
-  
   width: 20px;
   height: 37px;
-  
   background-color: black;
   border-radius: 10px;
 }
@@ -183,10 +201,8 @@ body {
   margin-top: 145px;
   left: 50%; /* centers horizontally */
   transform: translateX(-50%); /* centers horizontally */
-  
   width: 27px;
   height: 27px;
-  
   background-color: black;
   border-radius: 50%;
 }
@@ -195,10 +211,8 @@ body {
   position: relative;
   margin-top: -65px;
   margin-left: 40px;
-  
   width: 70px;
   height: 70px;
-  
   background-color: black;
   border-radius: 50%;
   border: solid 20px #d45361;
@@ -209,10 +223,8 @@ body {
   position: relative;
   margin-top: -110px;
   margin-left: 240px;
-  
   width: 70px;
   height: 70px;
-  
   background-color: black;
   border-radius: 50%;
   border: solid 20px #d45361;  
