@@ -12,4 +12,14 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 7: Mood Board.** HSL, Grid \
 **Day 8: To Do List.** Vue. HSL.  \
 **Day 9: Heart.** Three.js, WebGL \
-**Day 10: TBD.**
+**Day 10: Video Game Controller.** CSS \
+**Day 11: .** \
+**Day 12: .**  \
+**Day 13: .**  \
+**Day 14: .**  \
+**Day 15: .** \
+**Day 16: .** \
+**Day 17: .**  \
+**Day 18: .**   \
+**Day 19: .** \
+**Day 20: .**
