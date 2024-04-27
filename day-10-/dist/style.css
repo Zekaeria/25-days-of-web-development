@@ -1,0 +1,97 @@
+body {
+  margin:auto;
+  padding:0;
+  box-sizing: border-box;
+  background-color: #defadc;
+}
+
+.controller {  
+  /* POSITION */
+  position: relative; 
+  margin-left: 200px; /* space from left  */
+  margin-top: 100px; /* space from top */
+
+  /* SIZING/SHAPE */
+  height: 250px; 
+  width: 400px;
+  
+  /* OTHER PROPERTIES */
+  background-color: #c23c40; /* red */
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+}
+
+.controllerLeft {
+  /* POSITION */
+  position: absolute;
+  margin-left: -240px;
+  margin-top: -10px; /* move up */
+  
+  /* SIZING/SHAPE */
+  width: 400px;
+  height: 400px;
+  clip-path: ellipse(230px 100px); /* ellipse */
+  border-radius: 100%;
+  transform: rotate(95deg);
+
+  /* OTHER PROPERTIES */
+  background-color: #c23c40;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+}
+
+.controllerRight {
+  /* POSITION */
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -10px;
+
+  /* SIZING/SHAPE */
+  width: 400px;
+  height: 400px;
+  clip-path: ellipse(230px 100px); /* ellipse */
+  border-radius: 100%;
+  transform: rotate(-95deg);
+  
+  /* OTHER PROPERTIES */
+  background-color: #c23c40;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);
+}
+
+.center {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  
+  border: 1px dotted black;
+}
+
+.touchpad {
+  position: relative; /* relative to parent, moves w/ parent 'center' */
+  width: 240px;
+  height: 140px;
+  left: 50%; /* centers horizontally */
+  transform: translateX(-50%); /* centers horizontally */
+  
+  background-color: black;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.1);  
+  border-radius: 10px;
+}
+
+.sLeft {
+  
+}
+
+.oRight {
+  
+}
+
+.home {
+  
+}
+
+.stickLeft {
+  
+}
+  
+.stickRight {
+  
+}
