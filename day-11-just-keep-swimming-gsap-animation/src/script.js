@@ -1,4 +1,5 @@
-//'Clownfish' by Rachel Hisko on Unsplash
+//'Clown Fish' by Rachel Hisko on Unsplash
+
 /* timeline sequence */
 var timeline = gsap.timeline({repeat: -1, repeatDelay: 1});
 
