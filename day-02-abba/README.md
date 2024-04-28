@@ -12,5 +12,5 @@ Recreation of [Valeria Pix's ABBA website](https://abbaband.tilda.ws/)
 [Text touching borders](https://stackoverflow.com/questions/37035869/best-way-to-create-header-with-text-touching-top-and-bottom-border)
 
 **Image Sources:** \
-"ABBA in AVRO's TopPop (Dutch television show) in 1974 " by AVRO is licensed under Creative Commons Attribution-Share Alike 3.0 Netherlands license [1](https://commons.wikimedia.org/wiki/File:ABBA_-_TopPop_1974_3.png) \
+"ABBA in AVRO's TopPop (Dutch television show) in 1974" by AVRO is licensed under Creative Commons Attribution-Share Alike 3.0 Netherlands license [1](https://commons.wikimedia.org/wiki/File:ABBA_-_TopPop_1974_3.png) \
 "Discoball"  by PickPik as Royalty Free material [2](https://www.pickpik.com/nightclub-ball-disco-ball-reflection-celebrate-light-effect-148352)
