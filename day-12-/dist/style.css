@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Sedgwick+Ave&display=swap');
+
+body {
+  background-color: white; /*#0e0e14*/
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainQ {
+  position: relative;
+  top: 50%;  /* centers container to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 400px;
+  height: 500px;
+  
+  border: 1px solid white;
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  
+  color: #d2fad3;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 500px;
+  
+  text-shadow:
+      0 0 7px #9BF89D,
+      0 0 10px #9BF89D,
+      0 0 21px #9BF89D,
+      0 0 42px #52c51d,
+      0 0 82px #52c51d,
+      0 0 92px #52c51d,
+      0 0 102px #52c51d,
+      0 0 151px #52c51d;  
+  animation: pulsate 0.25s ease-in-out infinite alternate; 
+}
+
+button {
+  position: absolute;
+  top: 45%; /* same as text container */
+  left: 50%;
+  transform: translate(-35px, 148px);
+  
+  width: 70px;
+  height: 70px;
+  
+  background: transparent; 
+  border: none;
+  border-radius: 100%;
+}
+
+button:hover {
+  cursor: pointer; 
+}
+
+/* Changes button when clicked */
+button:active {
+  background-color: red;
+}
+
+.arrow {
+  position: absolute;
+  top: 79%;
+  left: 15%;
+  
+  color: #9BF89D;
+  font-size: 55px;
+  font-weight: bolder;
+  transform: rotate(-20deg);
+}
+
+.mainQ p {
+  position: absolute;
+  top: 80%;
+  left: -40%;
+
+  color: #9BF89D;
+  font-family: "Sedgwick Ave", cursive; 
+  font-size: 50px;
+  letter-spacing: 3px;
+  transform: rotate(-15deg);
+}
+
+
+/* animates big Q */
+@keyframes pulsate {
+    
+  100% {
+      text-shadow:
+      0 0 4px #9BF89D,
+      0 0 11px #9BF89D,
+      0 0 19px #9BF89D,
+      0 0 40px #52c51d,
+      0 0 80px #52c51d,
+      0 0 90px #52c51d,
+      0 0 100px #52c51d,
+      0 0 150px #52c51d;
+  }
+  
+  0% {
+    text-shadow:
+    0 0 4px #9BF89D,
+    0 0 10px #9BF89D,
+    0 0 18px #9BF89D,
+    0 0 38px #52c51d,
+    0 0 73px #52c51d,
+    0 0 80px #52c51d,
+    0 0 94px #52c51d,
+    0 0 140px #52c51d;
+}
