@@ -14,7 +14,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 9: Heart.** Three.js, WebGL \
 **Day 10: Video Game Controller.** CSS \
 **Day 11: 'Just Keep Swimming' GSAP Animation.** Greensocket Animation Platform, HSL \
-**Day 12: 'Riddle Me This?'.** Interactive animation, Pug\
+**Day 12: 'Riddle Me This?' Interactive Page.** Pug \
 **Day 13: .**  \
 **Day 14: .**  \
 **Day 15: .** \
