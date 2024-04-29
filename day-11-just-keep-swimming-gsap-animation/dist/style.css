@@ -6,8 +6,6 @@ body {
   background: var(--grad-y-o);
   
   /* Custom properties as HSL Colors */
-  --black: 26 72% 15%;
-  --white: 49 0% 100%;
   --color-1: 182, 71%, 76%; /* color 1 for hsl */
   --color-1-hsl: hsl(var(--color-1));
   --color-2: 252, 64%, 26%; /* color 2 for hsl */
@@ -31,26 +29,31 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 20px;
+  text-shadow: 1px 1px 2px var(--color-2-hsl);
+  
   
   position: absolute;
   width: 210px;
-  top: 10%;
+  top: 8%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
 
 .t1 {
-  top: 20%;
+  top: 18%;
 }
 
 .t2 {
-  top: 30%;
+  top: 28%;
 }
 
 img {  
   position: absolute;
   width: 200px;
   margin-top: 210px;
+  filter: 
+    drop-shadow(0.1rem -0.1rem 0.01rem var(--color-1-hsl)); /* fish shadow */
+
 }
 
 /* import custom font 'Lost Fish' from fontspace */
