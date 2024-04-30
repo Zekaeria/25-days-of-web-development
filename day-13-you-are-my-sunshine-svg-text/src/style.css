@@ -1,0 +1,48 @@
+/* change dy in HTML to set spacing between text & path*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body {
+  margin-top: 80px;
+  background: var(--grad-y-o);
+  
+  font-size: 48px;
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  word-spacing: 13px;
+  letter-spacing: 5px;
+  
+  /* Custom HSL properties */
+  --color-1: 184, 81%, 81%; /* color 1 for hsl */
+  --color-1-hsl: hsl(var(--color-1));
+  --color-2: 52, 100%, 50%; /* color 2 for hsl */
+  --color-2-hsl: hsl(var(--color-2));
+  --color-3: 330, 65%, 69%;/* color 3 for hsl */
+  --color-3-hsl: hsl(var(--color-3)); 
+  --color-4: 202, 86%, 72%; /* color 4 for hsl */
+  --color-4-hsl: hsl(var(--color-4));
+  
+  /* Gradient */
+  --grad-y-o: linear-gradient(186deg, var(--color-1-hsl), var(--color-4-hsl));
+}
+
+path {
+  fill: var(--color-2-hsl); /* path shape */
+  animation: slide-up-fade-in ease 3s; /* slides up and fades in */
+  animation-iteration-count: 1; 
+}
+
+text {
+  fill: var(--color-3-hsl); /* text color */
+}
+
+/* Animation for sun to slide up and fade in */
+@keyframes slide-up-fade-in{
+    0% {
+        opacity:0;
+        transform:  translate(0px,20px);
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px);
+    }
+}
