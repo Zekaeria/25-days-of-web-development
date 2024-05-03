@@ -17,7 +17,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 12: 'Riddle Me This?' Interactive Page.** Pug \
 **Day 13: 'You Are My Sunshine' SVG Text.** SVG \
 **Day 14: Excited Cat.**  \
-**Day 15: Chicago.** \
+**Day 15: Chicago Text.** \
 **Day 16: .** \
 **Day 17: .**  \
 **Day 18: .**   \
