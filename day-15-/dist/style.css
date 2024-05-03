@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: pink;
+}
+
+/* Formats grid in container */
+.container {
+  /* centers container and grid items */
+
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  
+  display: grid; /* makes children grid items */
+  grid-gap: 50px; /* sets gaps between rows and columns*/
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  padding: 20px;
+  
+  /* grid item font properties */
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+}
+
+.pop {
+  animation: pop 0.75s ease-in-out 2;
+  
+}
+
+.six {
+  
+}
+
+.squish {
+  animation: squish 2s ease-in-out 2;
+}
+
+.unh-uh {
+  
+}
+
+.cicero {
+  
+}
+
+.lipschitz {
+  
+}
+
+@keyframes pop {
+  0% {opacity: 0; transform: scale(0.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes squish {
+  0% { transform: scaleY(2); }
+  100% { transform: scaleY(1); }
+}
