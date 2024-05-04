@@ -1,0 +1,108 @@
+/* A:3 L:2 I:1 E:3 N:3. width/height proportions: 1:3 */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #0e0e14;
+}
+
+/* SHAPE TYPES */
+.fwdSlash {
+  /*
+  width: 20px;
+  height: 10px;*/
+  background: white;
+}
+
+.backSlash {
+  background: white;
+}
+
+.horizLine {
+  width: 25px;
+  height: 12px;
+  background: blue;
+}
+
+/* E character */
+.horizTwo {
+
+}
+
+.hzTop {
+  position: relative;
+  margin-left: 510px;
+  margin-top: 3px;
+}
+
+.hzBottom {
+  position: relative;
+  margin-left: 510px;
+  margin-top: 21px;
+}
+
+.vertLine {
+  width: 15px;
+  height: 45px;
+  background: white;   
+}
+
+/* POSITIONING */
+.text-container {
+  width: 90%;
+  height: 150px;
+  
+  position: relative;
+  top: 20%;  /* centers container to viewport */
+  left: 48%;
+  transform: translate(-50%, -50%);
+
+  border: 1px dotted pink;
+}
+
+.L1 {
+  position: absolute;
+  margin-left: 235px;
+  margin-top: 3px;
+}
+
+.L2 {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 36px;
+  
+  width: 20px;
+}
+
+.I {
+  position: absolute;
+  margin-left: 365px;
+  margin-top: 3px;
+}
+
+.E1 {
+  position: absolute;
+  margin-left: 495px;
+  margin-top: 3px;
+}
+
+
+.E3 {
+  position: absolute;
+  margin-left: 510px;
+  margin-top: -29px;
+  
+  width: 20px;
+}
+
+.N2 {
+  position: absolute;
+  margin-left: 660px;
+  margin-top: -45px;
+}
+
+.N3 {
+  position: absolute;
+  margin-left: 625px;
+  margin-top: -45px;
+}
