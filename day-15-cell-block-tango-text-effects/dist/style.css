@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gaegu&family=La+Belle+Aurore&family=Limelight&family=Monoton&family=Neonderthaw&family=Niconne&display=swap');
+
 
 body {
   width: 100vw;
   height: 100vh;
-  background: pink;
+  background: #0e0e14;
+
 }
 
 /* Formats grid in container */
@@ -16,39 +18,79 @@ body {
   align-items: center;
   
   display: grid; /* makes children grid items */
-  grid-gap: 50px; /* sets gaps between rows and columns*/
+  grid-gap: 20px; /* sets gaps between rows and columns*/
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 100px;
+  margin-top: 70px;
   padding: 20px;
   
   /* grid item font properties */
-  font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
+  color: white;
 }
 
 .pop {
-  animation: pop 0.75s ease-in-out 2;
+  font-family: "Monoton", sans-serif; /* Chicle */
+  font-size: 65px;
+  letter-spacing: 10px;
+  animation: pop 2s ease-in-out;
   
+  color: #f595f3;
+  text-shadow: #fa61f7 5px 2px 15px;
 }
 
 .six {
-  
+  font-family: "Niconne", cursive;  
+  font-size: 65px;
+  letter-spacing: 4px;
+  color: #95E1D3;
+  text-shadow: 
+    1px 1px black,
+    1px 2px #F38181,
+    1px 3px #FCE38A,
+    1px 4px #EAFFD0,
+    1px 5px #F38181,
+    1px 6px #FCE38A,
+    1px 7px 15px #EAFFD0;
 }
 
 .squish {
-  animation: squish 2s ease-in-out 2;
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 50px;
+  animation: squish 3s ease-in-out infinite;
+  color: #b8c6f2;
+  text-shadow:
+    0 0 7px #df3d3d,
+    0 0 10px #3D64DF,
+    0 0 30px #3D64DF;  
 }
 
 .unh-uh {
-  
+  font-family: "La Belle Aurore", cursive;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow:
+    0 5px 7px #99173a,
+    0 10px 10px #99173a,
+    0 15px 30px #99173a;  
 }
 
 .cicero {
-  
+  font-family: "Neonderthaw", cursive;  
+  font-size: 70px;
+  animation: flicker 4.5s infinite;    
+  color: white;
+  text-shadow:
+    0 0 7px #FD6E21,
+    0 0 10px #FD6E21,
+    0 0 21px #FD6E21;
 }
 
 .lipschitz {
-  
+  font-family: "Limelight", sans-serif;  
+  font-size: 45px;
+  color: #EE222B;
+  text-shadow: #EE222B 1px 0 20px;
 }
 
 @keyframes pop {
@@ -57,6 +99,16 @@ body {
 }
 
 @keyframes squish {
-  0% { transform: scaleY(2); }
+  0% { transform: scaleY(1); }
+  50% { transform: scaleY(0.5); }
   100% { transform: scaleY(1); }
+}
+
+@keyframes flicker {
+  0%, 20%, 64%, 66%, 67%, 70%, 80%, 90%, 100% {
+    opacity: .99;
+  }
+	20%, 21%, 63%, 64%, 65%, 68%, 75% {
+		opacity: 0.3;
+	} 
 }
