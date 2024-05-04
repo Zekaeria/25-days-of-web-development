@@ -8,14 +8,14 @@ body {
 
 /* SHAPE TYPES */
 .fwdSlash {
-  background: yellow;
+  background: white;
   width: 15px;
   height: 45px;
   transform: skew(340deg);
 }
 
 .backSlash {
-  background: pink;
+  background: white;
   width: 15px;
   height: 45px;
   transform: skew(20deg);
@@ -24,7 +24,7 @@ body {
 .horizLine {
   width: 25px;
   height: 12px;
-  background: blue;
+  background: white;
 }
 
 /* E character */
@@ -59,8 +59,6 @@ body {
   top: 20%;  /* centers container to viewport */
   left: 50%;
   transform: translate(-50%, -50%);
-
-  border: 1px dotted pink;
 }
 
 .A1 {
