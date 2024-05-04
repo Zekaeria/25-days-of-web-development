@@ -18,7 +18,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 13: 'You Are My Sunshine' SVG Text.** SVG \
 **Day 14: Excited Cat.**  \
 **Day 15: Cell Block Tango Text Effects.** \
-**Day 16: .** \
+**Day 16: Alien Title Sequence.** GSAP \
 **Day 17: .**  \
 **Day 18: .**   \
 **Day 19: .** \
