@@ -8,14 +8,17 @@ body {
 
 /* SHAPE TYPES */
 .fwdSlash {
-  /*
-  width: 20px;
-  height: 10px;*/
-  background: white;
+  background: yellow;
+  width: 15px;
+  height: 45px;
+  transform: skew(340deg);
 }
 
 .backSlash {
-  background: white;
+  background: pink;
+  width: 15px;
+  height: 45px;
+  transform: skew(20deg);
 }
 
 .horizLine {
@@ -49,15 +52,33 @@ body {
 
 /* POSITIONING */
 .text-container {
-  width: 90%;
+  width: 780px;
   height: 150px;
   
   position: relative;
   top: 20%;  /* centers container to viewport */
-  left: 48%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
   border: 1px dotted pink;
+}
+
+.A1 {
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 16px;
+}
+
+.A2 {
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 16px;
+}
+
+.A3 {
+  position: relative;
+  top: 43px;
+  left: 95px;
 }
 
 .L1 {
@@ -95,9 +116,17 @@ body {
   width: 20px;
 }
 
+.N1 {
+  position: absolute;
+  margin-left: 639px;
+  margin-top: -45px;
+  
+  transform: skew(30deg);
+}
+
 .N2 {
   position: absolute;
-  margin-left: 660px;
+  margin-left: 653px;
   margin-top: -45px;
 }
 
