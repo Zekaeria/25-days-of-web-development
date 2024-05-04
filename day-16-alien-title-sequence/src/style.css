@@ -34,13 +34,13 @@ body {
 
 .hzTop {
   position: relative;
-  margin-left: 510px;
+  margin-left: 550px;
   margin-top: 3px;
 }
 
 .hzBottom {
   position: relative;
-  margin-left: 510px;
+  margin-left: 550px;
   margin-top: 21px;
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* POSITIONING */
 .text-container {
-  width: 780px;
+  width: 800px;
   height: 150px;
   
   position: relative;
@@ -65,31 +65,31 @@ body {
 
 .A1 {
   position: absolute;
-  margin-left: 90px;
+  margin-left: 40px;
   margin-top: 16px;
 }
 
 .A2 {
   position: absolute;
-  margin-left: 112px;
+  margin-left: 62px;
   margin-top: 16px;
 }
 
 .A3 {
   position: relative;
   top: 43px;
-  left: 95px;
+  left: 45px;
 }
 
 .L1 {
   position: absolute;
-  margin-left: 235px;
+  margin-left: 225px;
   margin-top: 3px;
 }
 
 .L2 {
   position: absolute;
-  margin-left: 250px;
+  margin-left: 240px;
   margin-top: 36px;
   
   width: 20px;
@@ -97,20 +97,19 @@ body {
 
 .I {
   position: absolute;
-  margin-left: 365px;
+  margin-left: 393px;
   margin-top: 3px;
 }
 
 .E1 {
   position: absolute;
-  margin-left: 495px;
+  margin-left: 535px;
   margin-top: 3px;
 }
 
-
 .E3 {
   position: absolute;
-  margin-left: 510px;
+  margin-left: 550px;
   margin-top: -29px;
   
   width: 20px;
@@ -118,7 +117,7 @@ body {
 
 .N1 {
   position: absolute;
-  margin-left: 639px;
+  margin-left: 719px;
   margin-top: -45px;
   
   transform: skew(30deg);
@@ -126,12 +125,12 @@ body {
 
 .N2 {
   position: absolute;
-  margin-left: 653px;
+  margin-left: 733px;
   margin-top: -45px;
 }
 
 .N3 {
   position: absolute;
-  margin-left: 625px;
+  margin-left: 705px;
   margin-top: -45px;
 }
