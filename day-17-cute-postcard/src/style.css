@@ -6,11 +6,10 @@ body {
   margin: 0px;
   background: var(--grad-y-o);
   background-size: 150% 150%; /* set background size to animate */
-  animation: bgAnimation 10s ease infinite;
-  /* add ease in background animation, round radius, box shadws  :) */
+  animation: bgAnimation 9s ease infinite;
   
   /* HSL Colors  */
-  --white: 231 53% 93%; /* double dashes = custom properties */
+  --white: 231 53% 93%; 
   --white-hsl: hsl(var(--white));
   --black: 24 63% 3%;
   --black-hsl: hsl(var(--black));
@@ -31,29 +30,28 @@ body {
 }
 
 .container {
+  position: relative;
+  top: 50%;  /* centers it to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);  
   width: 600px;
   height: 400px;
   animation: slide-right-fade-in 2.5s ease-in-out;
   
-  position: relative;
-  top: 50%;  /* centers container to viewport */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 .25rem var(--black-hsl);
   /* diagonally striped card border */
-  background: repeating-linear-gradient(45deg, var(--color-1-hsl), var(--color-1-hsl) 15px, var(--white-hsl) 15px, var(--white-hsl) 30px, var(--color-4-hsl) 30px, var(--color-4-hsl) 45px, var(--white-hsl) 45px, var(--white-hsl) 60px);
+  background: repeating-linear-gradient(45deg, var(--color-1-hsl), var(--color-1-hsl) 15px, var(--white-hsl) 15px, var(--white-hsl) 30px, var(--color-4-hsl) 30px, var(--color-4-hsl) 45px, var(--white-hsl) 45px, var(--white-hsl) 60px);  
+  box-shadow: 0 0 .25rem var(--black-hsl);
 }
 
 .card {
+  position: absolute;
+  top: 50%;  /* centers it to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);    
   width: 560px;
   height: 360px;
-  position: absolute;
   
-  background-color: white;
-  top: 50%;  /* centers container to viewport */
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  
+  background-color: white;  
   font-family: "Gaegu", sans-serif;
   font-size: 27px;
 }
@@ -62,7 +60,6 @@ body {
   position: absolute;
   left: 465px;
   top: 15px;
-  
   width: 65px;
   height: 67px;
   
@@ -81,11 +78,10 @@ img {
   position: absolute;
   left: 8px;
   top: 9px;
-  height: 51px;
-  
+  padding: 6px;  
+  height: 51px;  
   background: var(--color-2-hsl);
   background-size: 10px 10px;
-  padding: 6px;
 }
 
 .message {
@@ -93,7 +89,6 @@ img {
   left: 8px;
   top: 80px;
   padding: 20px;
-
   width: 240px;
   height: 240px;
 }
@@ -111,7 +106,6 @@ img {
   position: absolute;
   left: 300px;
   top: 130px;
-
   width: 240px;
   height: 200px;
 }
