@@ -3,21 +3,45 @@
 body {
   width: 100vw;
   height: 100vh;
+  margin: 0px;
+  background: var(--grad-y-o);
+  background-size: 150% 150%; /* set background size to animate */
+  animation: bgAnimation 10s ease infinite;
   /* add ease in background animation, round radius, box shadws  :) */
+  
+  /* HSL Colors  */
+  --white: 231 53% 93%; /* double dashes = custom properties */
+  --white-hsl: hsl(var(--white));
+  --black: 24 63% 3%;
+  --black-hsl: hsl(var(--black));
+  --color-1: 220 100% 66%; /* HSL-HEX in google color */
+  --color-1-hsl: hsl(var(--color-1)); /* blue */
+  --color-2: 158 100% 79%;
+  --color-2-hsl: hsl(var(--color-2));  /* green */
+  --color-3: 136 100% 91%;
+  --color-3-hsl: hsl(var(--color-3));  /* light green */
+  --color-4: 344 99% 57%;
+  --color-4-hsl: hsl(var(--color-4));  /* red */
+  --color-5: 268 100% 50%;
+  --color-5-hsl: hsl(var(--color-5));  /* purple */
+  
+  /* Gradients */
+  --grad-y-o: linear-gradient(90deg, hsla(var(--color-5) / .4), hsla(var(--color-2) / .7), hsla(var(--color-3) / .7));
+
 }
 
 .container {
   width: 600px;
   height: 400px;
+  animation: slide-right-fade-in 2.5s ease-in-out;
   
   position: relative;
   top: 50%;  /* centers container to viewport */
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 .25rem black;
- 
-  /* card border */
-  background: repeating-linear-gradient( 45deg, #444cf7, #444cf7    15px, #e5e5f7 15px, #e5e5f7 30px, pink 30px, pink 45px, #e5e5f7 45px, #e5e5f7 60px);
+  box-shadow: 0 0 .25rem var(--black-hsl);
+  /* diagonally striped card border */
+  background: repeating-linear-gradient(45deg, var(--color-1-hsl), var(--color-1-hsl) 15px, var(--white-hsl) 15px, var(--white-hsl) 30px, var(--color-4-hsl) 30px, var(--color-4-hsl) 45px, var(--white-hsl) 45px, var(--white-hsl) 60px);
 }
 
 .card {
@@ -36,12 +60,32 @@ body {
 
 .stamp {
   position: absolute;
-  left: 480px;
+  left: 465px;
   top: 15px;
   
-  width: 60px;
+  width: 65px;
   height: 67px;
-  border: 3px solid black;
+  
+  /* stamp border */
+  padding: 7px;
+  background: radial-gradient(transparent 0px, transparent 5px, #fff 1px, #fff);
+  background-size: 20px 20px;
+  -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+  background-position: 10px 10px;
+
+}
+
+
+
+img {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  height: 51px;
+  
+  background: var(--color-2-hsl);
+  background-size: 10px 10px;
+  padding: 6px;
 }
 
 .message {
@@ -60,7 +104,7 @@ body {
   top: 15px;
   width: 1px;
   height: 330px;
-  background-color: black;
+  background-color: var(--black-hsl);
 }
 
 .address {
@@ -76,4 +120,28 @@ hr {
   border-width: 2px; /* line weight */
   margin: 0em;
   margin-bottom: 20px;
+}
+
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slide-right-fade-in {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 50%; /* position to 50% */
+  }
 }
