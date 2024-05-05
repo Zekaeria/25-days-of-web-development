@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* add ease in background animation, round radius, box shadws  :) */
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  
+  position: relative;
+  top: 50%;  /* centers container to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 .25rem black;
+ 
+  /* card border */
+  background: repeating-linear-gradient( 45deg, #444cf7, #444cf7    15px, #e5e5f7 15px, #e5e5f7 30px, pink 30px, pink 45px, #e5e5f7 45px, #e5e5f7 60px);
+}
+
+.card {
+  width: 560px;
+  height: 360px;
+  position: absolute;
+  
+  background-color: white;
+  top: 50%;  /* centers container to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  
+  font-family: "Gaegu", sans-serif;
+  font-size: 27px;
+}
+
+.stamp {
+  position: absolute;
+  left: 480px;
+  top: 15px;
+  
+  width: 60px;
+  height: 67px;
+  border: 3px solid black;
+}
+
+.message {
+  position: absolute;
+  left: 8px;
+  top: 80px;
+  padding: 20px;
+
+  width: 240px;
+  height: 240px;
+}
+
+.line {
+  position: absolute;
+  left: 280px;
+  top: 15px;
+  width: 1px;
+  height: 330px;
+  background-color: black;
+}
+
+.address {
+  position: absolute;
+  left: 300px;
+  top: 130px;
+
+  width: 240px;
+  height: 200px;
+}
+
+hr {
+  border-width: 2px; /* line weight */
+  margin: 0em;
+  margin-bottom: 20px;
+}
