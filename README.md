@@ -20,7 +20,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 15: Cell Block Tango Text Effects.** \
 **Day 16: Alien Title Sequence.** GSAP \
 **Day 17: Cute Postcard.**  \
-**Day 18: .**   \
+**Day 18: Gooey Effect.** SVG \
 **Day 19: .** \
 **Day 20: .** \
 **Day 21: .**   \
