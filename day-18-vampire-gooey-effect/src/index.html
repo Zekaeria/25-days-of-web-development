@@ -1,0 +1,18 @@
+<!-- insert SVG filters/gooey effect here -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="gooey-effect">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="gooey-effect" />
+        <feBlend in="SourceGraphic" in2="gooey-effect" />
+    </filter>
+    ...
+  </defs>
+</svg>
+
+<div class="text"> vampire 
+  <div class="drop d1"> </div>
+  <div class="drop d2"> </div>
+  <div class="drop d3"> </div>  
+</div>
+
