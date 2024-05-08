@@ -9,9 +9,11 @@ body {
 
 .text {
   position: absolute;
-  top: 30%;  /* centers it to viewport */
-  left: 50%;
+  top: 60%; 
+  left: 50%; /* centers it to viewport */
   transform: translate(-50%, -50%);
+  
+  height: 500px;
   filter: url(#gooey-effect);
   overflow: hidden;
 
@@ -23,13 +25,16 @@ body {
 
 .drop {
   position: absolute;
-  top: 66%;
+  top: 23%;
   
   width: 1.5rem;
   height:1.5rem;
   border-radius: 0 100% 100% 100%;
   background-color: #E94560;
   animation: drop 5s ease infinite;
+}
+
+.drop {
 }
 
 .d1 {
