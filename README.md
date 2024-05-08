@@ -21,7 +21,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 16: Alien Title Sequence.** GSAP \
 **Day 17: Cute Postcard.**  \
 **Day 18: Vampire Gooey Effect.** SVG \
-**Day 19: .** \
+**Day 19: Stars.** SVG \
 **Day 20: .** \
 **Day 21: .**   \
 **Day 22: .** \
