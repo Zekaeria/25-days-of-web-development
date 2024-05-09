@@ -1,0 +1,79 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.letter-container {
+  position: relative;
+  top: 50%;  /* centers it to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  width: 500px;
+  height: 650px;
+  
+  border: 3px solid #FF9494;
+  box-shadow: 0 0 .5rem black;
+  
+  --s: 20px; /* size */
+  --color-1: #FF9494;
+  --color-2: white;
+  --grad: 80%,var(--color-1) 25.4%,#0000 26%;
+  
+  background:
+   radial-gradient(at 80% var(--grad)),
+   radial-gradient(at 20% var(--grad)),
+   conic-gradient(from -45deg at 50% 41%,var(--color-1) 90deg,var(--color-2) 0) 
+      calc(var(--s)/2) 0;
+  background-size: var(--s) var(--s);
+  
+  
+  
+}
+
+.image {
+  position: absolute;
+  padding: 2rem;
+  
+  width: 20px;
+  height: 20px;
+  top: 19px;
+  left: 30px;
+  border-radius: 50%;
+  
+  border: 5px solid #FF9494;
+  background: white;
+  box-shadow: 0 0 .25rem black;  
+}
+
+.quote-container {
+  position: absolute;
+  padding: 1rem;
+  
+  width: 210px;
+  height: 35px;
+  top: 30px;
+  left: 218px;
+  
+  border: 5px solid #FF9494;
+  background: white;
+  box-shadow: 0 0 .25rem black;  
+}
+
+.quote {
+  
+}
+
+.contents {
+  position: absolute;
+  padding: 2rem;
+  
+  width: 366px;
+  height: 424px;
+  top: 130px;
+  left: 30px;
+  
+  border: 5px solid #FF9494;
+  background: white;
+  box-shadow: 0 0 .25rem black;
+}
