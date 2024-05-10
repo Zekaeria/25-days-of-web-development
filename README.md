@@ -23,7 +23,7 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 18: Vampire Gooey Effect.** SVG \
 **Day 19: Stars.** SVG \
 **Day 20: Letter.** \
-**Day 21: .**   \
+**Day 21: Virtual Hugs Loading Bar.**   \
 **Day 22: .** \
 **Day 23: .** \
 **Day 24: .**   \
