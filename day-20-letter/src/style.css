@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background:#FFF5E4;
 }
 
 .letter-container {
@@ -14,6 +17,9 @@ body {
   
   border: 3px solid #FF9494;
   box-shadow: 0 0 .5rem black;
+  font-family: "Homemade Apple", cursive;
+  font-size: 12px;
+  animation: fade-in 2.5s ease-in-out;
   
   --s: 20px; /* size */
   --color-1: #FF9494;
@@ -61,7 +67,7 @@ body {
 }
 
 .quote {
-  
+  margin-top: -6px;
 }
 
 .contents {
@@ -77,3 +83,12 @@ body {
   background: white;
   box-shadow: 0 0 .25rem black;
 }
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
