@@ -3,7 +3,10 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #0e0e14;
+  /*background: #0e0e14;*/
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(30, 21, 11, 0.19); /* add brown overlay*/
+  background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZ2dXgwZzU4cjM3c2JyZWN4ZThnNHZkczJkYm40YXVhMWhrdnE5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RJy4FQlLbxDz4kJ6GF/giphy.gif'); /* Credit to Erica Anderson*/
 }
 
 /* SHAPE TYPES */

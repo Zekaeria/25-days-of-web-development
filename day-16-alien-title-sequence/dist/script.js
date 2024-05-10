@@ -1,3 +1,5 @@
+//Credit to Erica Anderson for the wonderful art
+
 /* timeline sequence */
 var timeline = gsap.timeline();
 
