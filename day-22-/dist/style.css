@@ -1,0 +1,28 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.cat1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+
+  height: 350px;
+}
+
+.cat2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  visibility: hidden;
+  
+  height: 350px;
+}
