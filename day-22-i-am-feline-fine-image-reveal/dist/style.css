@@ -1,28 +1,44 @@
 body {
+  margin: 0;
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  overflow: hidden;
+  background: #FFE6E6;
 }
 
 .cat1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-
-  height: 350px;
+  position: fixed;
+  top: 50%;  /* centers it to viewport */
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+  z-index: -1;
+  filter: drop-shadow(0 0 0.3rem #6155A6);
 }
 
-.cat2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  visibility: hidden;
+.circle {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
   
-  height: 350px;
+  background: black;
+  background-image: url("https://github.com/Zekaeria/25-days-of-web-development/blob/main/day-22-i-am-feline-fine-image-reveal/Cat2-by-zekaeria.png?raw=true"); /* hidden cat2 */
+  background-position: top 50% left 50%; /* background image positioning*/
+  background-repeat: no-repeat;
+  background-size: 450px 450px; /* change cat2 image size */
+  background-attachment: fixed;
+}
+
+/* Adds static overlay for circle */
+.static {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmltYWdmbDJ3dHl0aHloaDcxNzJtcHVoZHUyZ3Q1cWtweXJreDlpNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6vXRxrhj7Ov94Gbu/giphy.gif');
+
 }
