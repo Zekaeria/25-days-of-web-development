@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.basic{
+  background-color: #08D9D6;
+  color: black;
+}
+
+.btn-default {
+  background-color: #FF2E63;
+  color: black;
+}
+
+.btn-outline-success {
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: #4e366b;
+  color: white;
+}
