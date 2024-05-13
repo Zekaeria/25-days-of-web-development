@@ -26,5 +26,5 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 21: Virtual Hugs Loading Bar.**   \
 **Day 22: 'I'm feline fine!' Image Reveal.** \
 **Day 23: Bootstrap Buttons.** Bootstrap, jQuery \
-**Day 24: .**   \
+**Day 24: Showcase.**   \
 **Day 25: .**
