@@ -27,4 +27,4 @@ You can also see my projects here: [CodePen](https://codepen.io/zekaeria)
 **Day 22: 'I'm feline fine!' Image Reveal.** \
 **Day 23: Bootstrap Buttons.** Bootstrap, jQuery \
 **Day 24: Showcase.**   \
-**Day 25: .**
+**Day 25: Hidden City.**
