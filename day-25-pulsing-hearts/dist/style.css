@@ -1,24 +1,46 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-size: cover; /* scale to smallest size to fill (no empty space) */ 
+  background: radial-gradient(circle at 50% 50%, rgba(118, 136, 91, 1) 33%, rgba(98, 114, 84, 1) 100%);/* green */
 }
 
-.bat-symbol {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 3;
-  background: #000;
-  --g:#000 calc(100% - 1px),#0000;
-  mask:
-    conic-gradient(from 170deg at 47% 8%,#0000,#000 2deg 20deg,#0000 22deg) 
-     0 0/100% 50% no-repeat,
-    conic-gradient(from 170deg at 53% 8%,#0000,#000 2deg 20deg,#0000 22deg) 
-     0 0/100% 50% no-repeat,
-    radial-gradient(4.5% 20% at 50% 35%,var(--g)),
-    conic-gradient(#000 0 0) exclude,
-    radial-gradient(20% 35% at 50% -5%,var(--g)),
-    radial-gradient(30% 44% at 20% 100%,var(--g)),
-    radial-gradient(30% 44% at 80% 100%,var(--g)),
-    radial-gradient(16% 51% at left ,var(--g)),
-    radial-gradient(16% 51% at right,var(--g));
+.container {
+  text-align: center;
+  margin-top: 10%;  
+}
+
+.heart {
+  display: inline-grid;
+  padding: 30px;
+  font-size: 100px; /* size of emoji */
+}
+
+.heart:before,
+.heart:after {
+  content: "💝";
+  grid-area: 1/1;
+}
+.heart:after {
+  animation: pulse 1.5s infinite;
+}
+
+.heart2:before,
+.heart2:after {
+  content: "💗";
+  grid-area: 1/1;
+}
+
+.heart3:before,
+.heart3:after {
+  content: "💖";
+  grid-area: 1/1;
+}
+
+/* item scales up and fades out */
+@keyframes pulse {
+  to {
+    transform: scale(2.0);
+    opacity: 0;
+  }
 }
